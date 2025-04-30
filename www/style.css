@@ -1,0 +1,112 @@
+body {
+  background-color: #002244;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+.logo {
+  width: 130px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+#board {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.answer-box {
+  background-color: #003366;
+  border: 3px solid #FFD700;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 15px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.input-box {
+  margin: 20px auto 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.input-box input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+.input-box button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #002244;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #002244;
+  font-weight: bold;
+}
+
+#score {
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .answer-box {
+    font-size: 1rem;
+    min-height: 50px;
+    padding: 10px;
+  }
+
+  .input-box input {
+    font-size: 0.9rem;
+  }
+
+  button, .input-box button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

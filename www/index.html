@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Family Feud Game</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<img src="Logo.png" alt="Game Logo" class="logo" />
+		</header>
+
+		<div id="question"></div>
+		<div id="board"></div>
+
+		<div class="input-box">
+			<input type="text" id="user-answer" placeholder="Type your answer..." />
+			<button onclick="submitAnswer()">Submit</button>
+		</div>
+
+		<div class="buttons">
+			<button onclick="revealAnswer()">Reveal Next Answer</button>
+			<button onclick="nextQuestion()">Next Question</button>
+			<button onclick="resetGame()">Restart</button>
+		</div>
+
+		<div id="score">Score: 0</div>
+
+		<script src="splash.js"></script>
+		<script src="Script.js"></script>
+	</body>
+</html>
